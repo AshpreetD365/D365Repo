@@ -5,46 +5,6 @@
       <EntityInfo>
         <entity Name="mcapcoe_Assessment">
           <attributes>
-            <attribute PhysicalName="CreatedOn">
-              <Type>datetime</Type>
-              <Name>createdon</Name>
-              <LogicalName>createdon</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>inactive</ImeMode>
-              <ValidForUpdateApi>0</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>0</ValidForCreateApi>
-              <IsCustomField>0</IsCustomField>
-              <IsAuditEnabled>0</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>1</IsFilterable>
-              <IsRetrievable>1</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>datetime</Format>
-              <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
-              <Behavior>1</Behavior>
-              <displaynames>
-                <displayname description="Created On" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Date and time when the record was created." languagecode="1033" />
-              </Descriptions>
-            </attribute>
             <attribute PhysicalName="mcapcoe_Description">
               <Type>nvarchar</Type>
               <Name>mcapcoe_description</Name>
@@ -85,20 +45,19 @@
                 <Description description="Description of assessment from intro screen of maker assessment app." languagecode="1033" />
               </Descriptions>
             </attribute>
-            <attribute PhysicalName="mcapcoe_MCAPApprovalStatus">
-              <Type>picklist</Type>
-              <Name>mcapcoe_mcapapprovalstatus</Name>
-              <LogicalName>mcapcoe_mcapapprovalstatus</LogicalName>
+            <attribute PhysicalName="mcapcoe_DLPPolicy">
+              <Type>lookup</Type>
+              <Name>mcapcoe_dlppolicy</Name>
+              <LogicalName>mcapcoe_dlppolicy</LogicalName>
               <RequiredLevel>none</RequiredLevel>
               <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
               <ValidForUpdateApi>1</ValidForUpdateApi>
               <ValidForReadApi>1</ValidForReadApi>
               <ValidForCreateApi>1</ValidForCreateApi>
               <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsAuditEnabled>0</IsAuditEnabled>
               <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0.0.0</IntroducedVersion>
+              <IntroducedVersion>1.0.0.1</IntroducedVersion>
               <IsCustomizable>1</IsCustomizable>
               <IsRenameable>1</IsRenameable>
               <CanModifySearchSettings>1</CanModifySearchSettings>
@@ -115,13 +74,13 @@
               <IsFilterable>0</IsFilterable>
               <IsRetrievable>0</IsRetrievable>
               <IsLocalizable>0</IsLocalizable>
-              <AppDefaultValue>-1</AppDefaultValue>
-              <OptionSetName>mcapcoe_mcapapprovalstatus</OptionSetName>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
               <displaynames>
-                <displayname description="Approval Status" languagecode="1033" />
+                <displayname description="DLP Policy" languagecode="1033" />
               </displaynames>
               <Descriptions>
-                <Description description="This is the approval status for the assessment. " languagecode="1033" />
+                <Description description="" languagecode="1033" />
               </Descriptions>
             </attribute>
           </attributes>
