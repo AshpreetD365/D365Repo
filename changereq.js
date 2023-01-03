@@ -87,8 +87,8 @@
         <Dependent type="1" schemaName="mcapcoe_assessment" displayName="Assessment" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="9" schemaName="mcapcoe_mcapapprovalstatus" displayName="MCAP Approval Status" solution="Active" />
-        <Dependent type="2" schemaName="mcapcoe_mcapapprovalstatus" displayName="Approval Status" parentSchemaName="mcapcoe_assessment" parentDisplayName="Assessment" />
+        <Required type="10" schemaName="mcapcoe_mcapcoe_assessment_DLPPolicy_admin_dlppol" displayName="mcapcoe_mcapcoe_assessment_DLPPolicy_admin_dlppol" parentSchemaName="admin_dlppolicy" parentDisplayName="DLP Policy" solution="Active" />
+        <Dependent type="2" schemaName="mcapcoe_dlppolicy" displayName="DLP Policy" parentSchemaName="mcapcoe_assessment" parentDisplayName="Assessment" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>
