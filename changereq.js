@@ -1,95 +1,158 @@
-<ImportExportXml version="9.2.22111.206" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SolutionManifest>
-    <UniqueName>DummyTest</UniqueName>
-    <LocalizedNames>
-      <LocalizedName description="DummyTest" languagecode="1033" />
-    </LocalizedNames>
-    <Descriptions />
-    <Version>1.0.0.0</Version>
-    <Managed>0</Managed>
-    <Publisher>
-      <UniqueName>Morgan_Stanley_COE</UniqueName>
-      <LocalizedNames>
-        <LocalizedName description="Morgan Stanley COE" languagecode="1033" />
-      </LocalizedNames>
-      <Descriptions>
-        <Description description="This publisher is for Morgan Stanley COE specific configuration and development. " languagecode="1033" />
-      </Descriptions>
-      <EMailAddress xsi:nil="true"></EMailAddress>
-      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
-      <CustomizationPrefix>mscoe</CustomizationPrefix>
-      <CustomizationOptionValuePrefix>40675</CustomizationOptionValuePrefix>
-      <Addresses>
-        <Address>
-          <AddressNumber>1</AddressNumber>
-          <AddressTypeCode>1</AddressTypeCode>
-          <City xsi:nil="true"></City>
-          <County xsi:nil="true"></County>
-          <Country xsi:nil="true"></Country>
-          <Fax xsi:nil="true"></Fax>
-          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
-          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
-          <Latitude xsi:nil="true"></Latitude>
-          <Line1 xsi:nil="true"></Line1>
-          <Line2 xsi:nil="true"></Line2>
-          <Line3 xsi:nil="true"></Line3>
-          <Longitude xsi:nil="true"></Longitude>
-          <Name xsi:nil="true"></Name>
-          <PostalCode xsi:nil="true"></PostalCode>
-          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
-          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
-          <ShippingMethodCode>1</ShippingMethodCode>
-          <StateOrProvince xsi:nil="true"></StateOrProvince>
-          <Telephone1 xsi:nil="true"></Telephone1>
-          <Telephone2 xsi:nil="true"></Telephone2>
-          <Telephone3 xsi:nil="true"></Telephone3>
-          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
-          <UPSZone xsi:nil="true"></UPSZone>
-          <UTCOffset xsi:nil="true"></UTCOffset>
-          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
-        </Address>
-        <Address>
-          <AddressNumber>2</AddressNumber>
-          <AddressTypeCode>1</AddressTypeCode>
-          <City xsi:nil="true"></City>
-          <County xsi:nil="true"></County>
-          <Country xsi:nil="true"></Country>
-          <Fax xsi:nil="true"></Fax>
-          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
-          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
-          <Latitude xsi:nil="true"></Latitude>
-          <Line1 xsi:nil="true"></Line1>
-          <Line2 xsi:nil="true"></Line2>
-          <Line3 xsi:nil="true"></Line3>
-          <Longitude xsi:nil="true"></Longitude>
-          <Name xsi:nil="true"></Name>
-          <PostalCode xsi:nil="true"></PostalCode>
-          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
-          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
-          <ShippingMethodCode>1</ShippingMethodCode>
-          <StateOrProvince xsi:nil="true"></StateOrProvince>
-          <Telephone1 xsi:nil="true"></Telephone1>
-          <Telephone2 xsi:nil="true"></Telephone2>
-          <Telephone3 xsi:nil="true"></Telephone3>
-          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
-          <UPSZone xsi:nil="true"></UPSZone>
-          <UTCOffset xsi:nil="true"></UTCOffset>
-          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
-        </Address>
-      </Addresses>
-    </Publisher>
-    <RootComponents>
-      <RootComponent type="1" schemaName="mcapcoe_assessment" behavior="2" />
-    </RootComponents>
-    <MissingDependencies>
-      <MissingDependency>
-        <Required type="1" schemaName="mcapcoe_assessment" displayName="Assessment" solution="Active" />
-        <Dependent type="1" schemaName="mcapcoe_assessment" displayName="Assessment" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="10" schemaName="mcapcoe_mcapcoe_assessment_DLPPolicy_admin_dlppol" displayName="mcapcoe_mcapcoe_assessment_DLPPolicy_admin_dlppol" parentSchemaName="admin_dlppolicy" parentDisplayName="DLP Policy" solution="Active" />
-        <Dependent type="2" schemaName="mcapcoe_dlppolicy" displayName="DLP Policy" parentSchemaName="mcapcoe_assessment" parentDisplayName="Assessment" />
-      </MissingDependency>
-    </MissingDependencies>
-  </SolutionManifest>
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities>
+    <Entity>
+      <Name LocalizedName="Assessment" OriginalName="Assessment">mcapcoe_Assessment</Name>
+      <EntityInfo>
+        <entity Name="mcapcoe_Assessment">
+          <attributes>
+            <attribute PhysicalName="CreatedOn">
+              <Type>datetime</Type>
+              <Name>createdon</Name>
+              <LogicalName>createdon</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>inactive</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>1</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>datetime</Format>
+              <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
+              <Behavior>1</Behavior>
+              <displaynames>
+                <displayname description="Created On" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Date and time when the record was created." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="mcapcoe_Description">
+              <Type>nvarchar</Type>
+              <Name>mcapcoe_description</Name>
+              <LogicalName>mcapcoe_description</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.1</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>textarea</Format>
+              <MaxLength>100</MaxLength>
+              <Length>200</Length>
+              <displaynames>
+                <displayname description="Description" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Description of assessment from intro screen of maker assessment app." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="mcapcoe_MCAPApprovalStatus">
+              <Type>picklist</Type>
+              <Name>mcapcoe_mcapapprovalstatus</Name>
+              <LogicalName>mcapcoe_mcapapprovalstatus</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <AppDefaultValue>-1</AppDefaultValue>
+              <OptionSetName>mcapcoe_mcapapprovalstatus</OptionSetName>
+              <displaynames>
+                <displayname description="Approval Status" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="This is the approval status for the assessment. " languagecode="1033" />
+              </Descriptions>
+            </attribute>
+          </attributes>
+        </entity>
+      </EntityInfo>
+      <RibbonDiffXml>
+        <CustomActions />
+        <Templates>
+          <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+        </Templates>
+        <CommandDefinitions />
+        <RuleDefinitions>
+          <TabDisplayRules />
+          <DisplayRules />
+          <EnableRules />
+        </RuleDefinitions>
+        <LocLabels />
+      </RibbonDiffXml>
+    </Entity>
+  </Entities>
+  <Roles></Roles>
+  <Workflows></Workflows>
+  <FieldSecurityProfiles></FieldSecurityProfiles>
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls />
+  <EntityDataProviders />
+  <Languages>
+    <Language>1033</Language>
+  </Languages>
 </ImportExportXml>
