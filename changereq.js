@@ -26,6 +26,7 @@ Xrm.WebApi.online.execute(retrieveRecordChangeHistoryRequest).then(
     function success(result) {
         if (result.ok) {
             var results = JSON.parse(result.responseText);
+            console.log(results);
         }
     },
     function(error) {
